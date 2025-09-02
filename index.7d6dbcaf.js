@@ -1,0 +1,2 @@
+document.querySelectorAll("form input").forEach(function(e){if(!["submit","reset","button","file"].includes(e.type)){var t=(e.getAttribute("name")||"").trim();if(t){var r=t.charAt(0).toUpperCase()+t.slice(1);e.setAttribute("placeholder",r);var l=e.parentNode||e,i=l.querySelector('label.field-label[for="'.concat(CSS.escape(e.id||""),'"]'));i||((i=document.createElement("label")).classList.add("field-label"),e.id&&i.setAttribute("for",e.id),l.insertBefore(i,e)),i.textContent=t}}});
+//# sourceMappingURL=index.7d6dbcaf.js.map
